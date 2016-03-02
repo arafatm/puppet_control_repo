@@ -1,2 +1,3 @@
 ---
+gms_server_url: "gitlab.netsmart.demo"
 profile::hiera_message::message: "Hello world!"
