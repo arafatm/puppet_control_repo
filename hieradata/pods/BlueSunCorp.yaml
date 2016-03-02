@@ -1,0 +1,5 @@
+---
+profile::hiera_message::message: "Jane for president!"
+role::linux_db_server::root_password: "supersecret1"
+role::linux_db_server::admin_user: "admin"
+role::linux_db_server::admin_password: "password1"

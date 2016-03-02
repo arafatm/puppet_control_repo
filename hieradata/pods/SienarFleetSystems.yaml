@@ -1,0 +1,5 @@
+---
+profile::hiera_message::message: "Don't underestimate the darkside of the force"
+role::linux_db_server::root_password: "supersecret2"
+role::linux_db_server::admin_user: "admin2"
+role::linux_db_server::admin_password: "password2"

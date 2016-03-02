@@ -1,0 +1,2 @@
+---
+#profile::hiera_message::message: "Bonjour le monde!"
