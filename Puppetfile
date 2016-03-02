@@ -37,6 +37,7 @@ mod 'locp/cassandra', '1.9.2'
 mod 'puppetlabs/stdlib', '4.9.0'
 mod 'puppetlabs/vcsrepo', '1.3.1'
 mod 'puppetlabs/tomcat', '1.3.2'
+mod 'zack/r10k'
 
 # Forge Community Modules
 mod 'chocolatey/chocolatey', '1.2.0'
