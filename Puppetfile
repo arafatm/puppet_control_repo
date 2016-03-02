@@ -14,7 +14,6 @@
 
 forge "https://forgeapi.puppetlabs.com"
 
-mod 'puppet/windows_firewall', '1.0.0'
 mod 'puppetlabs/acl', '1.1.1'
 mod 'puppetlabs/apache', '1.6.0'
 mod 'puppetlabs/concat', '1.2.4'
