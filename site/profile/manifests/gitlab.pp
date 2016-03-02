@@ -1,7 +1,7 @@
 class profile::gitlab (
   String $gms_server_url = "https://${::fqdn}",
 ) {
-  require profile::iptables
+  # require profile::iptables
   firewall { '100 allow https':
     proto  => 'tcp',
     dport  => '443',
