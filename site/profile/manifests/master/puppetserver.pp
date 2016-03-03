@@ -31,7 +31,6 @@ class profile::master::puppetserver {
       'virtual/%{virtual}',
       'common',
     ],
-    eyaml          => true,
   }
 
   # We cannot simply set notify => Service['pe-puppetserver'] on Class['hiera']
@@ -40,20 +39,5 @@ class profile::master::puppetserver {
   # service and add a subscribe relationship.
   Service <| title == 'pe-puppetserver' |> {
     subscribe +> Class['hiera'],
-  }
-
-  # We have to manage this file like this because of ROAD-706
-  $key = file('profile/license.key')
-  exec { 'Create License':
-    command => "/bin/echo \"${key}\" > /etc/puppetlabs/license.key",
-    creates => '/etc/puppetlabs/license.key',
-  }
-
-  # SET-84 Turn off Dujour / telemetry for demo env for 2015.2
-   file { '/etc/puppetlabs/puppetserver/opt-out':
-    ensure => file,
-    mode   => '0644',
-    owner  => 'root',
-    group  => 'root',
   }
 }
