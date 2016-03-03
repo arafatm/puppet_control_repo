@@ -4,7 +4,14 @@ class profile::master::r10k_config (
   String  $git_management_system,
   String  $project_name,
   String  $r10k_ssh_key_file,
-  ){
+){
+
+  firewall { '110 webhook allow all': 
+    proto  => 'tcp',
+    dport  => '8088',
+    action => 'accept',
+  }
+
 
   # Instead of running via mco, run r10k directly
   class {'r10k::webhook::config':
