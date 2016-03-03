@@ -11,7 +11,11 @@ class profile::master::r10k_config (
     dport  => '8088',
     action => 'accept',
   }
-
+  
+  # HACK fix permission error or puppetserver won't come up!
+  file { '/etc/puppetlabs/code/environments/production/modules/gms/lib/puppet/provider/gms_webhook/github.rb'
+    mode    => '0644',
+  }
 
   # Instead of running via mco, run r10k directly
   class {'r10k::webhook::config':
