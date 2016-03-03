@@ -12,8 +12,8 @@ class profile::master::r10k_config (
     action => 'accept',
   }
   
-  # HACK fix permission error or puppetserver won't come up!
-  file { '/etc/puppetlabs/code/environments/production/modules/gms/lib/puppet/provider/gms_webhook/github.rb'
+  # HACK fix permission error or puppetserver won't come back up!
+  file { '/etc/puppetlabs/code/environments/production/modules/gms/lib/puppet/provider/gms_webhook/github.rb':
     mode    => '0644',
   }
 
