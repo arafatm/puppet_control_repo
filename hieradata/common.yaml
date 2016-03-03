@@ -1,8 +1,8 @@
 ---
-gms_server_fqdn: "gitlab.netsmart.demo"
-gms_api_token:
-git_management_system: "gitlab"
-project_name: "puppet/control-repo"
-r10k_ssh_key_file: "/etc/puppetlabs/puppetserver/ssh/id_rsa"
+profile::master::r10k_config::gms_server_fqdn: "gitlab.netsmart.demo"
+profile::master::r10k_config::gms_api_token:
+profile::master::r10k_config::git_management_system: "gitlab"
+profile::master::r10k_config::project_name: "puppet/control-repo"
+profile::master::r10k_config::r10k_ssh_key_file: "/etc/puppetlabs/puppetserver/ssh/id_rsa"
 
 profile::hiera_message::message: "Hello world!"
