@@ -31,6 +31,7 @@ mod 'puppetlabs/stdlib', '4.9.0'
 mod 'puppetlabs/vcsrepo', '1.3.1'
 mod 'puppetlabs/tomcat', '1.3.2'
 mod 'zack/r10k'
+mod 'jfryman/nginx'
 
 # Forge Community Modules
 mod 'abrader/gms', '1.0.2'
@@ -38,3 +39,8 @@ mod 'hunner/hiera', '2.0.1'
 mod 'nanliu/staging', '1.0.3'
 mod 'stahnma/epel', '1.0.2'
 mod 'vshn/gitlab', '1.7.2'
+
+# github
+mod 'nginx_puppet_demo',
+  :git => 'https://github.com/kaipak/puppet-pe_demo-nginx',
+  :ref => 'development'
