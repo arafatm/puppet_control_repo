@@ -1,4 +1,4 @@
-# Quickstart
+# Quickstart - NOT VALID FOR CODEMANAGER
 * install PE all-in-one master with installer
 * Create SSH key for Puppet to use for r10k deploy and interaction with your Git repository.
 * mkdir /etc/puppetlabs/puppetserver/ssh and place key in this directory.
